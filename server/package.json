@@ -1,0 +1,36 @@
+{
+  "name": "matcha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "cd ../client && npm start",
+    "db-start": "docker run --publish=7474:7474 --publish=7687:7687 --env NEO4J_AUTH=neo4j/whiterabbit -d neo4j:3.5",
+    "db-seed": "cd ./db && node seedNodes.js && node seedRelationships.js && node seedChat.js",
+    "db-seedNodes": "cd ./db && node seedNodes.js",
+    "db-seedRel": "cd ./db && node seedRelationships.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "cloudinary": "^1.14.0",
+    "concurrently": "^4.1.0",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.5.1",
+    "neo4j-driver": "^1.7.5",
+    "nodemailer": "^6.2.1",
+    "socket.io": "^2.2.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "faker": "^4.1.0",
+    "fakergem": "^1.0.3",
+    "nodemon": "^1.19.0"
+  }
+}

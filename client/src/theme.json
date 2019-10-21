@@ -1,0 +1,18 @@
+{
+    "color": {
+        "purple": "#6F48BD",
+        "lightPurple": "#F2ECFF",
+        "red":"#FF0041",
+        "lightRed":"#FF5B6C",
+        "ultraLightRed":"#FFD7DB",
+        "background": "#FBF9FF",
+        "black": "#4A4A4A",
+        "cardBackground" : "white",
+        "textBlack" : "#4A4A4A",
+        "textGrey" : "#D0D0D0",
+        "lightGrey" : "#E7E7E8",
+        "green" : "#ABEF99",
+        "white" : "white"
+    },
+    "borderRadius": "20px"
+}
