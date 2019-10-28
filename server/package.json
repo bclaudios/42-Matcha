@@ -11,6 +11,7 @@
     "db-seed": "cd ./db && node seedNodes.js && node seedRelationships.js && node seedChat.js",
     "db-seedNodes": "cd ./db && node seedNodes.js",
     "db-seedRel": "cd ./db && node seedRelationships.js",
+    "db-seedChat": "cd ./db && node seedChat.js",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "",

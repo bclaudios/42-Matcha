@@ -32,10 +32,10 @@ const seedChatMessage = async () => {
         log(`All previous messages deleted.`);
         log(`Seeding messages...`);
         const messages = [
-          "Bonjour",
-          "Ceci est un message de test",
-          "Ceci est un message de test assez long. Parce que c'est important de tester les grands messages aussi. On sait jamais que ça déborde de la div ou autres problème.",
-          "Allé, salut l'ami."
+          "Hi",
+          "This is a test message.",
+          "This is a longer test message, to see if everything fit nicely.",
+          "Alright, bye !"
         ]
         const matchRes = await session.run(`
             MATCH (m:Match)
