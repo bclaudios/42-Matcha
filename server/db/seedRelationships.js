@@ -125,7 +125,7 @@ const createNotification = async (type, fromId, toUuid) => {
 
 const seedVisitedRel = async () => {
     log(`\n***** VISITED relationships seeding *****`, `blue`)
-    const relByUser = 5;
+    const relByUser = 10;
     const maxId = await getUserCount();
     await deleteAllRel("VISITED");
     log(`Creating ${relByUser * maxId} "VISITED" relationships...`);
@@ -161,7 +161,7 @@ const seedVisitedRel = async () => {
 
 const seedBlockedRel = async () => {
     log(`\n***** BLOCKED relationships seeding *****`, `blue`)
-    const relByUser = 1;
+    const relByUser = 5;
     const maxId = await getUserCount();
     await deleteAllRel("BLOCKED");
     log(`Creating ${relByUser * maxId} "BLOCKED" relationships...`);
@@ -190,7 +190,7 @@ const seedBlockedRel = async () => {
 
 const seedTaggedRel = async () => {
     log(`\n***** TAGGED relationships seeding *****`, `blue`)
-    const relByUser = 3;
+    const relByUser = 8;
     const userCount = await getUserCount();
     const tagCount = await session.run(`MATCH (t:Tag) RETURN count(t)`);
     await deleteAllRel("TAGGED");
@@ -224,7 +224,7 @@ const seedTaggedRel = async () => {
 
 const seedLikedRel = async () => {
     log(`\n***** LIKED relationships seeding *****`, `blue`)
-    const relByUser = 2;
+    const relByUser = 10;
     const maxId = await getUserCount();
     await deleteAllRel("LIKED");
     log(`Creating ${relByUser * maxId} "LIKED" relationships...`);

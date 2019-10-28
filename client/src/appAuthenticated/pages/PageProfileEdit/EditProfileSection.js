@@ -13,8 +13,9 @@ import { Redirect } from 'react-router-dom';
 
 const StyledSection = styled.section `
     display:flex;
-    padding:1rem;
-    height:700px;
+    padding: 1rem 0;
+    @media (min-width: 701px) { padding:1rem; }
+    height:750px;
     width:100%;
 
     align-items:center;

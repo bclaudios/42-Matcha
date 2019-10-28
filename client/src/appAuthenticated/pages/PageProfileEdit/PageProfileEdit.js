@@ -10,9 +10,11 @@ import BlockedList from "./BlockedList";
 
 
 const EditCard = styled.div`
+        margin-top:2rem;
         display:flex;
         max-width:1000px;
         width:100%;
+        min-width:360px;
         border-radius: ${props => props.theme.borderRadius};
         background-color: ${props => props.theme.color.background};
         box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);

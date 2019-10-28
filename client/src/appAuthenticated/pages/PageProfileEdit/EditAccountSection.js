@@ -10,7 +10,7 @@ import { Redirect } from 'react-router-dom';
 
 const StyledSection = styled.section `
     padding:1rem;
-    height:700px;
+    height:750px;
     border-radius:0 ${props => props.theme.borderRadius} ${props => props.theme.borderRadius} 0;
     background-color:#2b2c2e;
     width:100%;
